@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,400,700');
+
+:root {
+	/* Colores */
+	--gris-base : #fafafa;
+	--gris-medio: #9b9b9b;
+	--azul-base : #1918b0;
+	/* Espaciados */
+	--espaciado-principal: 80px 120px;
+	/* Fuentes */
+	--lato: 'Lato', sans-serif;
+	--lato-sencilla: 400;
+	--lato-gruesa  : 900;
+	--roboto: 'Roboto Slab', serif;
+	--roboto-delgada: 100;
+	--roboto-ligera : 300;
+	--roboto-regular: 400;
+	--roboto-gruesa : 700;
+	--oswaldo: 'Oswald', sans-serif;
+	--oswaldo-delgada: 200;
+	--oswaldo-regular: 400;
+	--oswaldo-gruesa : 700;
+	/* Tamaño de títulos */
+	--fuente-regular: 2em;
+	--fuente-mediana: 2.5em;
+	--fuente-grande : 3em;
+	/* Transiciones */
+	--transicion: all 0.3s ease-out;
+}
+
+a {
+	display        : inline-block;
+	text-decoration: none;
+}
+
+button {
+	background-color: transparent;
+	border          : none;
+	cursor          : pointer;
+}
+
+img {
+	display: block;
+	width  : 100%;
+}
+
+* {
+	margin     : 0px;
+	padding    : 0px;
+	box-sizing : border-box;
+	outline    : none;
+}
+
+body {
+	background-color: white;
+}
+
+	body > nav {
+		font-family     : 'Lato', sans-serif;
+		width           : 350px;
+		height          : 100vh;
+		display         : flex;
+		align-items     : center;
+		justify-content : center;
+		flex-direction  : column;
+		position        : fixed;
+		top             : 0px;
+		left            : 0px;
+		background-color: var(--gris-base);
+	}
+
+		body > nav > a {
+			width   : auto;
+			height  : 250px;
+			position: absolute;
+			top     : 0px;
+		}
+
+			body > nav > a > img {
+				width : auto;
+				height: 100%;
+			}
+
+		body > nav > ul {
+			list-style: none;
+			width     : 100%;
+		}
+
+			body > nav > ul > li {
+				display      : block;
+				width        : 100%;
+				margin-bottom: 5px;
+			}
+
+			body > nav > ul > li:last-of-type {
+				margin-bottom: 0px;
+			}
+
+				body > nav > ul > li > a {
+					font-family   : var(--lato);
+					font-weight   : var(--lato-gruesa);
+					display       : block;
+					width         : 100%;
+					text-align    : center;
+					color         : var(--gris-medio);
+					text-transform: uppercase;
+					padding       : 10px 0px;
+					position      : relative;
+					transition    : var(--transicion);
+				}
+
+					body > nav > ul > li > a > span {
+						position: relative;
+						z-index : 10;
+					}
+
+				body > nav > ul > li > a:hover {
+					color: white;
+				}
+
+				body > nav > ul > li > a:before {
+					content         : '';
+					width           : 100%;
+					height          : 100%;
+					position        : absolute;
+					top             : 0px;
+					left            : -40px;
+					margin-left     : -100%;
+					background-color: var(--azul-base);
+					transform       : skew(-10deg);
+					transition      : var(--transicion);
+				}
+
+				body > nav > ul > li > a:hover:before {
+					margin-left: 0px;
+				}
+
+		body > nav > ol {
+			list-style: none;
+			position  : absolute;
+			bottom    : 40px;
+			text-align: center;
+		}
+
+			body > nav > ol > li {
+				display        : flex;
+				align-items    : center;
+				justify-content: center;
+				flex-direction : column;
+				margin-bottom  : 10px;
+			}
+
+			body > nav > ol > li:last-of-type {
+				margin-bottom: 0px;
+			}
+
+				body > nav > ol > li > i {
+					color: var(--azul-base);
+				}
+
+				body > nav > ol > li > a {
+					margin-top : 5px;
+					font-family: var(--roboto);
+					font-weight: var(--roboto-regular);
+					color      : var(--gris-medio);
+				}
+
+	body > div {
+		width   : calc(100% - 350px);
+		position: absolute;
+		right   : 0px;
+		top     : 0px;
+	}
+
+		body > div > header {
+			width   : 100%;
+			height  : 100vh;
+			position: relative;
+		}
+
+			body > div > header > div {
+				position: absolute;
+				left    : 80px;
+				bottom  : 120px;
+			}
+
+				body > div > header > div > h1 {
+					color         : white;
+					font-family   : var(--oswaldo);
+					font-weight   : var(--oswaldo-gruesa);
+					font-size     : 5em;
+					text-transform: uppercase;
+					white-space   : pre-line;
+					line-height   : 0.85em;
+					margin-bottom : 40px;
+				}
+
+					body > div > header > div > h1 > span {
+						font-size: 0.85em;
+					}
+
+				body > div > header > div > sub {
+					display    : inline-block;
+					color      : white;
+					font-family: var(--oswaldo);
+					font-weight: var(--oswaldo-delgada);
+					font-size  : 1.5em;
+				}
+
+	#nosotros {
+		width          : 100%;
+		height         : 100vh;
+		position       : relative;
+		display        : flex;
+		align-items    : center;
+		justify-content: center;
+		flex-direction : column;
+	}
+
+		#nosotros > h1 {
+			display       : inline-block;
+			font-family   : var(--lato);
+			font-weight   : var(--lato-gruesa);
+			font-size     : var(--fuente-mediana);
+			color         : white;
+			text-transform: uppercase;
+			margin-bottom : 20px;
+			line-height   : 1em;
+		}
+
+		#nosotros > sub {
+			display      : inline-block;
+			color        : white;
+			margin-bottom: 40px;
+			font-family  : var(--roboto);
+			font-weight  : var(--roboto-delgada);
+			font-size    : 16px;
+		}
+
+		#nosotros > div {
+			width          : 80%;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-around;
+			align-items    : flex-start;
+		}
+
+			#nosotros > div > figure {
+				width          : calc(25% - 20px);
+				display        : flex;
+				align-items    : center;
+				justify-content: center;
+				flex-direction : column;
+			}
+
+			#nosotros > div > figure:nth-of-type(n+5) {
+				margin-top: 40px;
+			}
+
+				#nosotros > div > figure > div {
+					width          : 120px;
+					height         : 120px;
+					border-radius  : 50%;
+					border         : 3px solid white;
+					display        : flex;
+					align-items    : center;
+					justify-content: center;
+					margin-bottom  : 10px;
+				}
+
+					#nosotros > div > figure > div > img {
+						width: 50%;
+					}
+
+				#nosotros > div > figure > figcaption {
+					text-align : center;
+					font-family: var(--roboto);
+					font-weight: var(--roboto-gruesa);
+					color      : white;
+				}
+
+	#servicios {
+		width          : 100%;
+		height         : 100vh;
+		position       : relative;
+		display        : flex;
+		align-items    : center;
+		justify-content: center;
+		flex-direction : column;
+		padding        : 0px 80px;
+	}
+
+		#servicios > h1 {
+			display       : inline-block;
+			font-family   : var(--lato);
+			font-weight   : var(--lato-gruesa);
+			font-size     : var(--fuente-mediana);
+			color         : white;
+			text-transform: uppercase;
+			margin-bottom : 20px;
+			line-height   : 1em;
+		}
+
+		#servicios > div {
+			width          : 100%;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+		}
+
+			#servicios > div > figure {
+				width          : calc(33.33333333333333% - 20px);
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				align-items    : center;
+			}
+
+			#servicios > div > figure:nth-of-type(n+4) {
+				margin-top: 20px;
+			}
+
+				#servicios > div > figure > div:first-of-type {
+					width           : calc(30% - 5px);
+					background-color: var(--azul-base);
+					border-radius   : 5px;
+					padding         : 25px;
+				}
+
+				#servicios > div > figure > div:last-of-type {
+					width: calc(70% - 5px);
+				}
+
+					#servicios > div > figure > div:last-of-type > figcaption {
+						display       : inline-block;
+						font-family   : var(--lato);
+						font-weight   : var(--lato-gruesa);
+						font-size     : 1em;
+						color         : white;
+						text-transform: uppercase;
+						margin-bottom : 10px;
+						line-height   : 1em;
+					}
+
+					#servicios > div > figure > div:last-of-type > p {
+						font-family: var(--roboto);
+						font-size  : 0.85em;
+						font-weight: var(--roboto-delgada);
+						color      : white;
+						margin-bottom: 10px;
+					}
+
+					#servicios > div > figure > div:last-of-type > a {
+						color        : white;
+						font-family  : var(--roboto);
+						font-size    : 0.85em;
+						font-weight  : var(--roboto-regular);
+						border-bottom: 1px solid white;
+					}
