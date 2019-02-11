@@ -22,8 +22,8 @@ $('.item-menu').on('click', function(event) {
 });
 
 // Botón de navegación
-$('body > button').on('click', function(event) {
+$('#nav').on('click', function(event) {
 	event.preventDefault();
-	$(this).toggleClass('active-btn');
-	$('body > nav').toggleClass('active-nav');
+	$(this).toggleClass('button-active');
+	$('body > nav').toggleClass('nav-active');
 });
