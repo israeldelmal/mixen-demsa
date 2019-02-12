@@ -1,8 +1,8 @@
 <?php include 'header.html'; ?>
 	<?php include 'nav.html'; ?>
-	<div id="container">
+	<div>
 		<!-- Cabecera -->
-		<header class="section" id="inicio">
+		<header class="section" id="inicio" data-section="Data1">
 			<div>
 				<h1>Nuestra capacidad
 				<span>instalada consta de:</span></h1>
@@ -11,7 +11,7 @@
 			</div>
 		</header>
 		<!-- Nosotros -->
-		<section id="nosotros" class="section">
+		<section id="nosotros" class="section" data-section="Data2">
 			<h1>Nosotros</h1>
 			<sub>DEMSA INDUSTRIAL es una empresa mexicana con 12 años de experiencia en los ramos de la construcción como:</sub>
 			<div>
@@ -46,7 +46,7 @@
 			</div>
 		</section>
 		<!-- Servicios -->
-		<section class="section" id="servicios">
+		<section class="section" id="servicios" data-section="Data3">
 			<h1>Servicios</h1>
 			<div>
 				<figure>
@@ -184,6 +184,9 @@
 		</section>
 		<!-- Contacto -->
 		<footer class="section" id="contacto">
+			<map name="Ubicación">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.494594574547!2d-106.08191968496271!3d28.674847982401158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43dbc268a9a5%3A0xcdf3832f39950655!2sMixen%3A+Marketing+%26+Web+Technology!5e0!3m2!1ses-419!2smx!4v1549838868144" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</map>
 			<div>
 				<h1>Contacto</h1>
 				<div>
@@ -225,9 +228,7 @@
 					</form>
 				</div>
 			</div>
-			<map name="Ubicación">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.494594574547!2d-106.08191968496271!3d28.674847982401158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea43dbc268a9a5%3A0xcdf3832f39950655!2sMixen%3A+Marketing+%26+Web+Technology!5e0!3m2!1ses-419!2smx!4v1549838868144" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</map>
 		</footer>
 	</div>
 <?php include 'footer.html'; ?>
+
