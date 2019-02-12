@@ -230,9 +230,4 @@
 			</map>
 		</footer>
 	</div>
-	<button id="nav">
-		<span></span>
-		<span></span>
-		<span></span>
-	</button>
 <?php include 'footer.html'; ?>

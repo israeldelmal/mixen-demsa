@@ -710,6 +710,266 @@ body {
 			margin-bottom: 0px;
 		}
 
+
+	service {
+		display : block;
+		width   : 100%;
+		height  : 100vh;
+		position: relative;
+	}
+
+		service > service-header {
+			display            : flex;
+			align-items        : center;
+			justify-content    : center;
+			width              : 100%;
+			height             : 25%;
+			background-image   : url('../imagenes/servicios/cabecera.jpg');
+			background-size    : cover;
+			background-position: center;
+		}
+
+			service > service-header > h1 {
+				color          : white;
+				display        : flex;
+				align-items    : center;
+				justify-content: center;
+				flex-direction : column;
+				line-height    : 1.1em;
+			}
+
+				service > service-header > h1 > span {
+					font-family   : var(--lato);
+					text-transform: uppercase;
+					color         : #9b9b9b;
+				}
+
+				service > service-header > h1 > strong {
+					font-family   : var(--lato);
+					text-transform: uppercase;
+					font-size     : 1.25em;
+				}
+
+		service > service-body {
+			width          : 100%;
+			height         : 50%;
+			position       : relative;
+			display        : flex;
+			flex-flow      : row wrap;
+			justify-content: space-between;
+			align-items    : center;
+			padding        : 0px 80px;
+		}
+
+			service > service-body > div:first-of-type {
+				width: calc(70% - 20px);
+			}
+
+			service > service-body > div:last-of-type {
+				width: calc(30% - 20px);
+			}
+
+				service > service-body > div > h2 {
+					font-family   : var(--lato);
+					text-transform: uppercase;
+					color         : var(--azul-base);
+					font-size     : 1.5em;
+				}
+
+				service > service-body > div > time {
+					font-family   : var(--lato);
+					text-transform: uppercase;
+					color         : #9b9b9b;
+					font-size     : 0.85em;
+					margin-bottom : 20px;
+					display       : inline-block;
+				}
+
+				service > service-body > div > p {
+					font-family  : var(--roboto);
+					font-weight  : var(--roboto-ligera);
+					margin-bottom: 20px;
+					text-align   : justify;
+				}
+
+				service > service-body > div > p:last-of-type {
+					margin-bottom: 0px;
+				}
+
+		service > service-footer {
+			display            : flex;
+			flex-flow          : row wrap;
+			justify-content    : space-between;
+			align-items        : center;
+			width              : 100%;
+			height             : 25%;
+			padding            : 0px 80px;
+			background-image   : url('../imagenes/nosotros/fondo.jpg');
+			background-size    : cover;
+			background-position: center;
+		}
+
+			service > service-footer > hgroup > h3 {
+				color         : white;
+				font-family   : var(--oswaldo);
+				font-weight   : var(--oswaldo-gruesa);
+				text-transform: uppercase;
+				font-size     : 2.5em;
+			}
+
+			service > service-footer > hgroup > h4 {
+				color         : white;
+				font-family   : var(--oswaldo);
+				font-weight   : var(--oswaldo-delgada);
+				text-transform: uppercase;
+			}
+
+			service > service-footer > a {
+				border     : 1px solid white;
+				font-family: var(--roboto);
+				font-weight: var(--roboto-regular);
+				padding    : 10px 20px;
+				color      : white;
+			}
+
+	ss {
+		display : block;
+		width   : 100%;
+		height  : 100vh;
+		position: relative;
+	}
+
+		ss > ss-body {
+			display                : flex;
+			align-items            : center;
+			justify-content        : center;
+			flex-direction         : column;
+			width                  : 100%;
+			height                 : 75%;
+			position               : relative;
+			background-image       : url('../imagenes/nosotros/fondo.jpg');
+			-webkit-background-size: cover;
+			background-size        : cover;
+			background-position    : center;
+			padding                : 0px 80px;
+		}
+
+			ss > ss-body > hgroup {
+				display        : flex;
+				align-items    : center;
+				justify-content: center;
+				flex-direction : column;
+				margin-bottom  : 40px;
+			}
+
+				ss > ss-body > hgroup > h1 {
+					color         : var(--gris-medio);
+					font-family   : var(--lato);
+					font-weight   : var(--lato-gruesa);
+					text-transform: uppercase;
+					font-size     : 1.5em;
+				}
+
+				ss > ss-body > hgroup > h2 {
+					color         : white;
+					font-family   : var(--lato);
+					font-weight   : var(--lato-gruesa);
+					text-transform: uppercase;
+					font-size     : 1.75em;
+				}
+
+			ss > ss-body > div {
+				width          : 100%;
+				display        : flex;
+				flex-flow      : row wrap;
+				justify-content: space-between;
+				align-items    : center;
+			}
+
+				ss > ss-body > div > div {
+					width      : calc(50% - 20px);
+					font-family: var(--roboto);
+					font-weight: var(--roboto-ligera);
+					color      : white;
+				}
+
+					ss > ss-body > div > div > ul {
+						padding-left : 16px;
+						margin-bottom: 20px;
+					}
+
+						ss > ss-body > div > div > ul > li {
+							margin-bottom: 5px;
+						}
+
+						ss > ss-body > div > div > ul > li:last-of-type {
+							margin-bottom: 0px;
+						}
+
+					ss > ss-body > div > div > p {
+						text-align: justify;
+					}
+
+		ss > ss-footer {
+			display         : flex;
+			flex-flow       : row wrap;
+			justify-content : space-between;
+			align-items     : center;
+			padding         : 0px 80px;
+			width           : 100%;
+			height          : 25%;
+			background-color: #202020;
+			position        : relative;
+		}
+
+			ss > ss-footer > hgroup > h3 {
+				color         : white;
+				font-family   : var(--oswaldo);
+				font-weight   : var(--oswaldo-gruesa);
+				text-transform: uppercase;
+				font-size     : 2.5em;
+			}
+
+			ss > ss-footer > hgroup > h4 {
+				color         : white;
+				font-family   : var(--oswaldo);
+				font-weight   : var(--oswaldo-delgada);
+				text-transform: uppercase;
+			}
+
+			ss > ss-footer > a {
+				border     : 1px solid white;
+				font-family: var(--roboto);
+				font-weight: var(--roboto-regular);
+				padding    : 10px 20px;
+				color      : white;
+			}
+
+	nav-responsive {
+		display         : none;
+		flex-flow       : row wrap;
+		justify-content : flex-start;
+		align-items     : center;
+		width           : 100%;
+		height          : 60px;
+		background-color: white;
+		padding         : 0px 20px;
+		position        : fixed;
+		top             : 0px;
+		left            : 0px;
+		z-index         : 90;
+	}
+
+		nav-responsive > a {
+			display: inline-block;
+			height : 50px;
+		}
+
+			nav-responsive > a > img {
+				height: 100%;
+				width : auto;
+			}
+
 	.button-active {
 		display        : flex !important;
 		align-items    : center;
@@ -861,6 +1121,66 @@ body {
 		#contacto > map {
 			position: static;
 		}
+
+	service > service-header > h1 > span {
+		font-size: 1em;
+	}
+
+	service > service-header > h1 > strong {
+		font-size: 1.1em;
+	}
+
+	service > service-body {
+		height: 75%;
+	}
+
+		service > service-body > div:first-of-type {
+			width: 100%;
+		}
+
+			service > service-body > div > p {
+				font-size: 0.85em;
+			}
+
+		service > service-body > div:last-of-type {
+			display: none;
+		}
+
+	service > service-footer {
+		display: none;
+	}
+
+	ss > ss-body {
+		height: 100%;
+	}
+
+		ss > ss-body > hgroup {
+			margin-bottom: 20px;
+		}
+
+			ss > ss-body > hgroup > h1 {
+				font-size: 1.2em;
+			}
+
+			ss > ss-body > hgroup > h2 {
+				font-size: 1.2em;
+			}
+
+		ss > ss-body > div > div {
+			font-size: 0.85em;
+		}
+
+		ss > ss-body > div > div:first-of-type {
+			display: none;
+		}
+
+		ss > ss-body > div > div:last-of-type {
+			width: 100%;
+		}
+
+	ss > ss-footer {
+		display: none;
+	}
 }
 
 @media all and (orientation: portrait) and (max-width: 1030px) {
@@ -910,7 +1230,31 @@ body {
 		}
 }
 
+@media all and (orientation: portrait) and (max-width: 770px) {
+	ss > ss-body {
+		height: 100%;
+	}
+
+		ss > ss-body > div > div {
+			width: 100%;
+		}
+
+		ss > ss-body > div > div:first-of-type {
+			margin-bottom: 40px;
+		}
+
+	ss > ss-footer {
+		display: none;
+	}
+}
+
 @media all and (orientation: portrait) and (max-width: 420px) {
+	#nav {
+		left : auto;
+		top  : 10px;
+		right: 20px;
+	}
+
 	body > nav {
 		width      : 100%;
 		margin-left: -100%;
@@ -1076,4 +1420,46 @@ body {
 		#contacto > map {
 			height: 150px;
 		}
+
+	service {
+		margin-top: 60px;
+		height    : auto;
+	}
+
+		service > service-header {
+			padding: 20px 0px;
+		}
+
+		service > service-body {
+			padding: 20px;
+		}
+
+			service > service-body > div:first-of-type {
+				width: 100%;
+			}
+
+			service > service-body > div:last-of-type {
+				display: none;
+			}
+
+		service > service-footer {
+			display: none;
+		}
+
+	ss > ss-body {
+		padding: 0px 20px;
+	}
+
+		ss > ss-body > hgroup > h1 {
+			font-size: 1.1em;
+		}
+
+		ss > ss-body > hgroup > h2 {
+			font-size : 1.2em;
+			text-align: center;
+		}
+
+	nav-responsive {
+		display: flex;
+	}
 }
