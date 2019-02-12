@@ -1,8 +1,8 @@
 <?php include 'header.html'; ?>
 	<?php include 'nav.html'; ?>
-	<div>
+	<div id="container">
 		<!-- Cabecera -->
-		<header id="inicio" data-parallax="scroll" data-image-src="assets/imagenes/cabecera/fondo.jpg">
+		<header class="section" id="inicio">
 			<div>
 				<h1>Nuestra capacidad
 				<span>instalada consta de:</span></h1>
@@ -11,7 +11,7 @@
 			</div>
 		</header>
 		<!-- Nosotros -->
-		<section id="nosotros" data-parallax="scroll" data-image-src="assets/imagenes/nosotros/fondo.jpg">
+		<section id="nosotros" class="section">
 			<h1>Nosotros</h1>
 			<sub>DEMSA INDUSTRIAL es una empresa mexicana con 12 años de experiencia en los ramos de la construcción como:</sub>
 			<div>
@@ -46,7 +46,7 @@
 			</div>
 		</section>
 		<!-- Servicios -->
-		<section id="servicios" data-parallax="scroll" data-image-src="assets/imagenes/servicios/fondo.jpg">
+		<section class="section" id="servicios">
 			<h1>Servicios</h1>
 			<div>
 				<figure>
@@ -100,7 +100,7 @@
 			</div>
 		</section>
 		<!-- Casos de éxito -->
-		<section id="casos-de-exito" data-parallax="scroll" data-image-src="assets/imagenes/nosotros/fondo.jpg">
+		<section class="section" id="casos-de-exito" data-parallax="scroll" data-image-src="assets/imagenes/nosotros/fondo.jpg">
 			<h1>Casos de éxito</h1>
 			<div>
 				<div>
@@ -164,7 +164,7 @@
 			</div>
 		</section>
 		<!-- Presencia -->
-		<section id="presencia" data-parallax="scroll" data-image-src="assets/imagenes/presencia/fondo.jpg">
+		<section class="section" id="presencia" data-parallax="scroll" data-image-src="assets/imagenes/presencia/fondo.jpg">
 			<div>
 				<h1>BUSCAMOS CUBRIR LAS NECESIDADES
 				DE NUESTROS CLIENTES EN COSTO,
@@ -183,7 +183,7 @@
 			</div>
 		</section>
 		<!-- Contacto -->
-		<footer id="contacto" data-parallax="scroll" data-image-src="assets/imagenes/servicios/fondo.jpg">
+		<footer class="section" id="contacto">
 			<div>
 				<h1>Contacto</h1>
 				<div>

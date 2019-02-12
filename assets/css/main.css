@@ -55,6 +55,7 @@ img {
 
 body {
 	background-color: white;
+	overflow        : hidden;
 }
 
 	body > nav {
@@ -173,16 +174,22 @@ body {
 				}
 
 	body > div {
-		width   : calc(100% - 350px);
-		position: absolute;
-		right   : 0px;
-		top     : 0px;
+		width     : calc(100% - 350px);
+		height    : 100vh;
+		position  : absolute;
+		right     : 0px;
+		top       : 0px;
+		overflow-y: auto;
 	}
 
 		body > div > header {
-			width   : 100%;
-			height  : 100vh;
-			position: relative;
+			width                : 100%;
+			height               : 100%;
+			position             : relative;
+			background-image     : url('../imagenes/cabecera/fondo.jpg');
+			background-size      : cover;
+			background-position  : center;
+			background-attachment: fixed;
 		}
 
 			body > div > header > div {
@@ -215,13 +222,16 @@ body {
 				}
 
 	#nosotros {
-		width          : 100%;
-		height         : 100vh;
-		position       : relative;
-		display        : flex;
-		align-items    : center;
-		justify-content: center;
-		flex-direction : column;
+		width                : 100%;
+		height               : 100%;
+		display              : flex;
+		align-items          : center;
+		justify-content      : center;
+		flex-direction       : column;
+		background-image     : url('../imagenes/nosotros/fondo.jpg');
+		background-size      : cover;
+		background-position  : center;
+		background-attachment: fixed;
 	}
 
 		#nosotros > h1 {
@@ -287,14 +297,18 @@ body {
 				}
 
 	#servicios {
-		width          : 100%;
-		height         : 100vh;
-		position       : relative;
-		display        : flex;
-		align-items    : center;
-		justify-content: center;
-		flex-direction : column;
-		padding        : 0px 80px;
+		width                : 100%;
+		height               : 100vh;
+		position             : relative;
+		display              : flex;
+		align-items          : center;
+		justify-content      : center;
+		flex-direction       : column;
+		padding              : 0px 80px;
+		background-image     : url('../imagenes/servicios/fondo.jpg');
+		background-size      : cover;
+		background-position  : center;
+		background-attachment: fixed;
 	}
 
 		#servicios > h1 {
@@ -366,13 +380,17 @@ body {
 					}
 
 	#casos-de-exito {
-		width          : 100%;
-		height         : 100vh;
-		padding        : 0px 80px;
-		display        : flex;
-		align-items    : center;
-		justify-content: center;
-		flex-direction : column;
+		width                : 100%;
+		height               : 100vh;
+		padding              : 0px 80px;
+		display              : flex;
+		align-items          : center;
+		justify-content      : center;
+		flex-direction       : column;
+		background-image     : url('../imagenes/nosotros/fondo.jpg');
+		background-size      : cover;
+		background-position  : center;
+		background-attachment: fixed;
 	}
 
 		#casos-de-exito > h1 {
@@ -462,9 +480,13 @@ body {
 				}
 
 	#presencia {
-		width   : 100%;
-		height  : 100vh;
-		position: relative;
+		width                : 100%;
+		height               : 100vh;
+		position             : relative;
+		background-image     : url('../imagenes/presencia/fondo.jpg');
+		background-size      : cover;
+		background-position  : center;
+		background-attachment: fixed;
 	}
 
 		#presencia > div:first-of-type {
@@ -544,9 +566,13 @@ body {
 				}
 
 	#contacto {
-		width   : 100%;
-		height  : 100vh;
-		position: relative;
+		width                : 100%;
+		height               : 100vh;
+		position             : relative;
+		background-image     : url('../imagenes/servicios/fondo.jpg');
+		background-size      : cover;
+		background-position  : center;
+		background-attachment: fixed;
 	}
 
 		#contacto > div {
